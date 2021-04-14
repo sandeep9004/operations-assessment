@@ -20,7 +20,7 @@ data "aws_ami" "amazon_linux" {
 }
 
 resource "aws_key_pair" "developer" {
-  public_key = var.public_key
+ public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXP3YUDggaiz08zbZ3H82CR4pqXf9mcuAZClTBA4xygRMFvzaFHtlHkihy7JYgzdtl2zwqKKiP4xeI94W8TC+RPmJhaLReTT+8eC2fBHLElrvOIrYSdpw7osjzz/UJJMkxpDE2brOtL1cmV1kP4823+Mt6wyqv9wlqjDQ8wWZFxu6vIPw2BjMa/2MFwBQ8ZGEGdF0YrHWXVJaaYmZEKslMYsKryx5vkPQdvDRJZMEB8WqbNysaC/7mRPgFzwKbBh7GxdgXfvJcifA+7nba4eLCvpp4i0CgBJccqfsqcu/DYtr+ST2poIfUjvuSq+YEUtXFB5Fm/Ohgx59iLxnfEC+p root@ip-172-31-41-170"
 }
 
 resource "aws_instance" "machine" {
